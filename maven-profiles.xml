@@ -1,0 +1,15 @@
+<!-- Configuration d'un profil Maven (par exemple pour utiliser sur un PC autre que le mien) -->
+<!-- Utilisation :
+  -- 1) copier ce bloc dans la section 'profiles' du fichier settings.xml de la machine concernée (créer la section si elle n'existe pas)
+  -- 2) exécuter les commandes maven avec l'option '-P maven_scaunois, !profile_to_disable' pour activer le profil maven_scaunois ET désactiver un éventuel profil profile_to_disable qui serait actif par défaut
+  -->
+<!-- On peut ensuite configurer tout ce qu'on veut dans ce profil maven_scaunois, notamment les repositories, et ainsi éviter d'utiliser ceux des autres profils.
+  -- Par exemple, si un autre profil utilisait un repository spécifique, la configuration actuelle ne l'utilisera pas et utilisera à la place le repo maven central
+  -->
+
+<profile>
+    <id>maven_scaunois</id>
+    <activation>
+        <activeByDefault>false</activeByDefault>
+    </activation>
+</profile>
