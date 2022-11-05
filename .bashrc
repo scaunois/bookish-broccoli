@@ -23,3 +23,5 @@ alias gst="git status"
 
 alias mci="mvn clean install"
 alias mi="mvn install"
+
+alias mysql="winpty mysql"
